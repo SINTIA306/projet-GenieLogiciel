@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply antialiased text-ink;
+  }
+  body {
+    @apply bg-surface min-h-screen font-sans;
+  }
+}
+
+/* Fond dégradé animé (accueil QuickLodge) — uniquement via classe utilitaire */
+@keyframes ql-hero-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.ql-animated-hero-bg {
+  background: linear-gradient(
+    125deg,
+    #0ea5e9,
+    #3b82f6,
+    #8b5cf6,
+    #d946ef,
+    #ec4899,
+    #f97316,
+    #22c55e,
+    #14b8a6,
+    #06b6d4,
+    #0ea5e9
+  );
+  background-size: 400% 400%;
+  animation: ql-hero-gradient-shift 16s ease-in-out infinite;
+}
