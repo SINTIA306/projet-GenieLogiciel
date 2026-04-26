@@ -1,0 +1,54 @@
+# ========================
+# BACKEND (SPRING BOOT)
+# ========================
+backend/target/
+backend/uploads/
+*.class
+*.jar
+*.war
+
+# ========================
+# FRONTEND (NEXT.JS)
+# ========================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/dist/
+
+# ========================
+# ENVIRONNEMENT
+# ========================
+.env
+*.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ========================
+# LOGS
+# ========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ========================
+# IDE / EDITEURS
+# ========================
+.idea/
+.vscode/
+*.iml
+
+# ========================
+# SYSTEME
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# TEMP
+# ========================
+*.tmp
+*.swp
